@@ -1,0 +1,67 @@
+{
+  "name": "@rustedcompiler/multi-finger-tap",
+  "version": "1.0.0",
+  "description": "A lightweight library for detecting multi-finger tap gestures on touch devices",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/MultiFingerTap.d.ts",
+      "import": "./dist/MultiFingerTap.mjs",
+      "require": "./dist/MultiFingerTap.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "touch",
+    "gesture",
+    "tap",
+    "multi-touch",
+    "multi-finger",
+    "touch-events",
+    "mobile",
+    "react",
+    "typescript"
+  ],
+  "author": "loarsaw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loarsaw/multi-finger-tap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loarsaw/multi-finger-tap/issues"
+  },
+  "homepage": "https://github.com/loarsaw/multi-finger-tap#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.3.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  }
+}
