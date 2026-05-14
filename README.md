@@ -1,7 +1,7 @@
 # @rustedcompiler/multi-finger-tap
 
 
-![Demo](https://raw.githubusercontent.com/loarsaw/multi-finger-tap/main/demo.gif)
+![Demo](https://raw.githubusercontent.com/loarsaw/multi-finger-tap/refs/heads/main/demo.gif)
 
 A lightweight, framework-agnostic library for detecting multi-finger tap gestures on touch devices.
 
